@@ -1,0 +1,302 @@
+/* All CSS styles go here */
+
+
+body {
+    background: black;
+}
+
+
+.cover{
+    width: 600px;
+    height: 900px;
+    position: absolute;
+    border: 10px solid #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;}
+
+
+.eye{
+    width: 350px;
+    height: 350px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;  }
+
+
+.iris{
+    width: 200px;
+    height: 200px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;  }
+
+.lid {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 1;  }
+
+.lid span{
+    display: block;
+    width: 100%;
+    height: 0%;
+    background: #ff2618;
+    border-radius: 50%;
+    transition: 0.4s all;  }
+
+.eye:hover .lid span {
+    height: 100%;
+}
+
+
+.c1{
+    width: 50px;
+    height: 50px;
+    background: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;;
+    border-radius: 50%;  }
+.c2{
+    width: 25px;
+    height: 25px;
+    background: white;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%; }
+
+.CR1 {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    border: 75px solid #ff2618;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: -2;}
+.CR2 {
+    width: 775px;
+    height: 775px;
+    position: absolute;
+    border: 75px solid #ff2618;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: -2;}
+
+.rat1 {
+    width:100%;
+    height: 100%;
+    background: url("../images/R1.gif");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -75%) rotate(0deg);
+    z-index: -1;
+    animation: ratty 15s infinite linear;
+    animation-delay: 1s;
+    transform-origin: 80% 75%;}
+
+@keyframes ratty {
+    0% {transform: translate(-80%, -75%) rotate(0deg);}
+    25% {transform: translate(-80%, -75%) rotate(-90deg);}
+    50% {transform: translate(-80%, -75%) rotate(-180deg);}
+    75% {transform: translate(-80%, -75%) rotate(-270deg);}
+    100% {transform: translate(-80%, -75%) rotate(-360deg);}
+}
+
+
+.rat2 {
+    width:100%;
+    height: 100%;
+    background: url("../images/R1.gif");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    animation: rata 15s infinite linear;
+    animation-delay: 1s;
+    transform-origin: 80% 75%;}
+
+@keyframes rata {
+    0% {transform: translate(-80%, -75%) rotate(-180deg);}
+    25% {transform: translate(-80%, -75%) rotate(-270deg);}
+    50% {transform: translate(-80%, -75%) rotate(-360deg);}
+    75% {transform: translate(-80%, -75%) rotate(-450deg);}
+    100% {transform: translate(-80%, -75%) rotate(-540deg);}
+}
+
+.rat3 {
+    width:100%;
+    height: 100%;
+    background: url("../images/r2.gif");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    animation: rats 9s infinite linear;
+    transform: translate(-80%, -75%) rotate(0deg);
+    animation-delay: 3s;
+    transform-origin: 80% 75%;}
+
+@keyframes rats {
+    0% {transform: translate(-80%, -75%) rotate(0deg);}
+    25% {transform: translate(-80%, -75%) rotate(90deg);}
+    50% {transform: translate(-80%, -75%) rotate(180deg);}
+    75% {transform: translate(-80%, -75%) rotate(270deg);}
+    100% {transform: translate(-80%, -75%) rotate(360deg);}
+}
+
+.rat4 {
+    width:100%;
+    height: 100%;
+    background: url("../images/r2.gif");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    animation: ratas 9s infinite linear;
+    transform: translate(-80%, -75%) rotate(0deg);
+    animation-delay: 3s;
+    transform-origin: 80% 75%;}
+
+@keyframes ratas {
+    0% {transform: translate(-80%, -75%) rotate(180deg);}
+    25% {transform: translate(-80%, -75%) rotate(270deg);}
+    50% {transform: translate(-80%, -75%) rotate(360deg);}
+    75% {transform: translate(-80%, -75%) rotate(450deg);}
+    100% {transform: translate(-80%, -75%) rotate(540deg);}}
+
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("../images/title-01.png");
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    z-index: 1;}
+
+.p1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("../images/p1.png");
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    z-index: 2;
+    animation: p1 8s infinite linear;
+    opacity: 0;}
+
+@keyframes p1 {
+    0% {opacity: 0;}
+    24% {opacity: 0;}
+    25% {opacity: 1;}
+    50% {opacity: 0;}
+    75% {opacity: 0;}
+    100% {opacity: 0;}}
+
+
+.p9 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("../images/p9.png");
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    z-index: 2;
+    animation: p9 8s infinite linear;
+    opacity: 0;}
+
+@keyframes p9 {
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    49% {opacity: 0;}
+    50% {opacity: 1;}
+    75% {opacity: 0;}
+    100% {opacity: 0;}}
+
+
+.p8 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("../images/p8.png");
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    z-index: 2;
+    animation: p8 8s infinite linear;
+    opacity: 0;}
+
+@keyframes p8 {
+    0% {opacity: 0;}
+    1% {opacity: 1;}
+    25% {opacity: 0;}
+    50% {opacity: 0;}
+    75% {opacity: 0;}
+    100% {opacity: 0;}}
+
+.p4 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("../images/p4.png");
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    z-index: 2;
+    animation: p4 8s infinite linear;
+    opacity: 0;}
+
+@keyframes p4 {
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    50% {opacity: 0;}
+    74% {opacity: 0;}
+    75% {opacity: 1;}
+    100% {opacity: 0;}}
+
+
+.author{
+    font-family: 'Play', sans-serif;
+    width: 1250px;
+    font-size: 5em;
+    color: white;
+    line-height: .8em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-22%, -330%);
+    z-index: 3;}
+
+/*
+font-family: 'Play', sans-serif;
+font-family: 'Changa', sans-serif;
+font-family: 'Jockey One', sans-serif;
